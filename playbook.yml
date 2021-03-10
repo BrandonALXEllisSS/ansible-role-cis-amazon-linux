@@ -3,6 +3,9 @@
 - hosts: all
   gather_facts: true
   become: yes
+  set_fact:
+    ansible_distribution_version: "2017.12"
 
   roles:
     - ansible-role-cis-amazon-linux
+  
